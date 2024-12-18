@@ -125,6 +125,10 @@ impl TableTheme {
         Self::new(Style::rounded(), full, true)
     }
 
+    pub fn sharp() -> TableTheme {
+        Self::new(Style::sharp(), Style::sharp(), true)
+    }
+
     pub fn reinforced() -> TableTheme {
         let full = Style::modern()
             .corner_top_left('┏')

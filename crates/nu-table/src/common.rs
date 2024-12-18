@@ -181,6 +181,7 @@ pub fn load_theme(mode: TableMode) -> TableTheme {
         TableMode::WithLove => TableTheme::with_love(),
         TableMode::CompactDouble => TableTheme::compact_double(),
         TableMode::Rounded => TableTheme::rounded(),
+        TableMode::Sharp => TableTheme::sharp(),
         TableMode::Reinforced => TableTheme::reinforced(),
         TableMode::Heavy => TableTheme::heavy(),
         TableMode::None => TableTheme::none(),

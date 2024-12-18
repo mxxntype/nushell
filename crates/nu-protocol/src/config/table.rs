@@ -11,6 +11,7 @@ pub enum TableMode {
     CompactDouble,
     #[default]
     Rounded,
+    Sharp,
     Reinforced,
     Heavy,
     None,
@@ -35,6 +36,7 @@ impl FromStr for TableMode {
             "compact_double" => Ok(Self::CompactDouble),
             "default" => Ok(TableMode::default()),
             "rounded" => Ok(Self::Rounded),
+            "sharp" => Ok(Self::Sharp),
             "reinforced" => Ok(Self::Reinforced),
             "heavy" => Ok(Self::Heavy),
             "none" => Ok(Self::None),
@@ -44,7 +46,7 @@ impl FromStr for TableMode {
             "restructured" => Ok(Self::Restructured),
             "ascii_rounded" => Ok(Self::AsciiRounded),
             "basic_compact" => Ok(Self::BasicCompact),
-            _ => Err("'basic', 'thin', 'light', 'compact', 'with_love', 'compact_double', 'rounded', 'reinforced', 'heavy', 'none', 'psql', 'markdown', 'dots', 'restructured', 'ascii_rounded', or 'basic_compact'"),
+            _ => Err("'basic', 'thin', 'light', 'compact', 'with_love', 'compact_double', 'rounded', 'sharp', 'reinforced', 'heavy', 'none', 'psql', 'markdown', 'dots', 'restructured', 'ascii_rounded', or 'basic_compact'"),
         }
     }
 }
